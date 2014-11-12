@@ -152,8 +152,57 @@
 		color: #fff
 		+transition(opacity 400ms, background 200ms)
 		&:hover
-			background: darken($orange, 5%)   		 	 				
+			background: darken($orange, 5%)
 
+// deliver
+.deliver
+	padding: 50px 0 60px 
+	background: #fafafa url(../img/map.png) 50% 50%	no-repeat		   		 	 				
+	&__in
+		+wrap
+	&__list
+		padding: 0 28px
+	&__price
+		text-align: center
+		a
+			display: inline-block
+			height: 40px
+			line-height: 40px
+			padding: 0 18px
+			background: $blue
+			font-size: 12px
+			text-transform: uppercase
+			color: #fff
+			text-decoration: none
+			+tr(background 200ms)
+			&:hover
+				background: darken($blue, 5%) 
+.subtitle
+	margin-bottom: 55px
+	text-align: center
+	font-weight: 300
+	text-transform: uppercase
+	color: #a7a9ac
+	font-size: 14px
+.list
+	margin-bottom: 35px 
+	li
+		position: relative
+		padding-left: 28px
+		margin-top: 15px
+		font-size: 14px
+		color: #3f3f3f
+		&:first-child
+			margin-left: 0
+		&:before
+			content: ""
+			position: absolute
+			top: 5px
+			left: 0
+			width: 7px
+			height: 7px
+			background: $orange 
+			  		
 
 
 

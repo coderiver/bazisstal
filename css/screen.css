@@ -24,8 +24,17 @@ body { font-family: "Exo 2", Arial, sans-serif; font-size: 12px; line-height: 1.
 
 .h2 { font-size: 36px; text-transform: uppercase; color: white; font-weight: normal; }
 
+.h3 { margin-bottom: 30px; text-align: center; font-size: 24px; font-weight: 300; text-transform: uppercase; color: #3f3f3f; }
+
+.h4 { margin-bottom: 20px; font-size: 18px; font-weight: 500; color: #3f3f3f; text-transform: uppercase; }
+
 .link { display: inline-block; padding: 0 20px; height: 38px; line-height: 38px; border: 1px solid #fe662a; color: #fe662a; text-decoration: none; font-size: 12px; text-transform: uppercase; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
 .link:hover { background: #fe662a; color: #050303; }
+
+.box { *zoom: 1; }
+.box:after { content: " "; display: table; clear: both; }
+
+.col50 { float: left; width: 50%; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
@@ -77,3 +86,17 @@ body { font-family: "Exo 2", Arial, sans-serif; font-size: 12px; line-height: 1.
 .catalog__descr:hover:before { opacity: 0; }
 .catalog__request { visibility: hidden; opacity: 0; position: absolute; bottom: 10px; left: 10px; right: 10px; height: 40px; line-height: 40px; background: #fe662a; font-size: 12px; text-transform: uppercase; text-decoration: none; color: white; -moz-transition: opacity 400ms, background 200ms; -o-transition: opacity 400ms, background 200ms; -webkit-transition: opacity 400ms, background 200ms; transition: opacity 400ms, background 200ms; }
 .catalog__request:hover { background: #fe5411; }
+
+.deliver { padding: 50px 0 60px; background: #fafafa url(../img/map.png) 50% 50% no-repeat; }
+.deliver__in { width: 980px; margin: 0 auto; }
+.deliver__list { padding: 0 28px; }
+.deliver__price { text-align: center; }
+.deliver__price a { display: inline-block; height: 40px; line-height: 40px; padding: 0 18px; background: #2a4f84; font-size: 12px; text-transform: uppercase; color: white; text-decoration: none; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
+.deliver__price a:hover { background: #244371; }
+
+.subtitle { margin-bottom: 55px; text-align: center; font-weight: 300; text-transform: uppercase; color: #a7a9ac; font-size: 14px; }
+
+.list { margin-bottom: 35px; }
+.list li { position: relative; padding-left: 28px; margin-top: 15px; font-size: 14px; color: #3f3f3f; }
+.list li:first-child { margin-left: 0; }
+.list li:before { content: ""; position: absolute; top: 5px; left: 0; width: 7px; height: 7px; background: #fe662a; }
