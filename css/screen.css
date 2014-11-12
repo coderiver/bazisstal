@@ -100,3 +100,11 @@ body { font-family: "Exo 2", Arial, sans-serif; font-size: 12px; line-height: 1.
 .list li { position: relative; padding-left: 28px; margin-top: 15px; font-size: 14px; color: #3f3f3f; }
 .list li:first-child { margin-left: 0; }
 .list li:before { content: ""; position: absolute; top: 5px; left: 0; width: 7px; height: 7px; background: #fe662a; }
+
+.economy { padding: 55px 0 45px; }
+.economy__in { width: 980px; margin: 0 auto; }
+.economy__list { *zoom: 1; margin-left: -40px; }
+.economy__list:after { content: " "; display: table; clear: both; }
+.economy__item { float: left; width: 300px; margin-left: 40px; }
+.economy__item > p { font-size: 14px; color: #3f3f3f; }
+.economy__img { height: 186px; margin-bottom: 20px; background: #d7d7d7; }
