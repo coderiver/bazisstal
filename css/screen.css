@@ -124,3 +124,28 @@ body { font-family: "Exo 2", Arial, sans-serif; font-size: 12px; line-height: 1.
 .comment__author { padding-top: 20px; }
 .comment__author p { color: #9f9f9f; font-size: 16px; }
 .comment__author span { color: #e2e2e2; font-size: 12px; }
+
+.contacts { padding: 90px 0 0; background: url(../img/bg.jpg); }
+.contacts__in { width: 980px; margin: 0 auto; text-align: center; }
+.contacts__in .h3 { color: white; margin-bottom: 67px; }
+
+.phone { font-size: 70px; font-weight: 300; color: white; }
+
+.adress { margin-bottom: 65px; font-size: 14px; color: white; }
+
+.map { position: relative; height: 365px; }
+
+#YMapsID { width: 100%; height: 100%; overflow: hidden; }
+
+.footer { padding: 48px 0 74px; }
+.footer__in { width: 980px; margin: 0 auto; *zoom: 1; }
+.footer__in:after { content: " "; display: table; clear: both; }
+.footer__content { overflow: hidden; text-align: center; }
+
+.copyrights { float: left; padding-top: 10px; font-size: 14px; color: #bbbbbb; }
+
+.design { float: right; padding-top: 10px; font-size: 14px; }
+.design a { color: #fe662a; text-decoration: none; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
+.design a:hover { color: #fe5411; }
+
+.feedback { width: 230px; height: 40px; background: #fe662a; -moz-transition: bckground 200ms; -o-transition: bckground 200ms; -webkit-transition: bckground 200ms; transition: bckground 200ms; font-size: 12px; color: white; text-transform: uppercase; }
