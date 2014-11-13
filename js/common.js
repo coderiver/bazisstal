@@ -1,8 +1,10 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+// slick
 
-	console.log($('body').html());
+	$('.js-slick').slick({
+		dots: true,
+		arrows: false
+	});
+
 });

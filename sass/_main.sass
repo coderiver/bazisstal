@@ -222,6 +222,45 @@
 		height: 186px
 		margin-bottom: 20px
 		background: #d7d7d7 
+		
+// comments
+.slick
+	padding-top: 50px
+.slick-dots
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	li
+		display: inline-block
+		margin: 0 11px
+		button
+			+hide-text
+			width: 7px
+			height: 7px
+			background: #dedede
+		&.slick-active
+			button
+				background: $blue 
+.comments
+	padding: 50px 0 70px 
+	background: #fafafa
+	&__in
+		+wrap
+		text-align: center
+		.h4
+			margin-bottom: 40px
+.comment
+	& > p
+		font-size: 14px
+	&__author
+		padding-top: 20px
+		p
+			color: #9f9f9f
+			font-size: 16px
+		span
+			color: #e2e2e2
+			font-size: 12px						
 				
 
 			  		

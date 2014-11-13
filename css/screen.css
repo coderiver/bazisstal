@@ -108,3 +108,19 @@ body { font-family: "Exo 2", Arial, sans-serif; font-size: 12px; line-height: 1.
 .economy__item { float: left; width: 300px; margin-left: 40px; }
 .economy__item > p { font-size: 14px; color: #3f3f3f; }
 .economy__img { height: 186px; margin-bottom: 20px; background: #d7d7d7; }
+
+.slick { padding-top: 50px; }
+
+.slick-dots { position: absolute; top: 0; left: 0; right: 0; }
+.slick-dots li { display: inline-block; margin: 0 11px; }
+.slick-dots li button { font: 0/0 a; text-shadow: none; color: transparent; width: 7px; height: 7px; background: #dedede; }
+.slick-dots li.slick-active button { background: #2a4f84; }
+
+.comments { padding: 50px 0 70px; background: #fafafa; }
+.comments__in { width: 980px; margin: 0 auto; text-align: center; }
+.comments__in .h4 { margin-bottom: 40px; }
+
+.comment > p { font-size: 14px; }
+.comment__author { padding-top: 20px; }
+.comment__author p { color: #9f9f9f; font-size: 16px; }
+.comment__author span { color: #e2e2e2; font-size: 12px; }
