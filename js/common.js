@@ -7,6 +7,32 @@ head.ready(function() {
 		arrows: false
 	});
 
+	
+	$('.overlay i').on('click', function(){
+		$('.popup').removeClass('is-open');
+		$('.overlay').hide();
+	});
+
+	$('.popup__close').on('click', function(){
+		$(this).parent().removeClass('is-open');
+		$('.overlay').hide();
+	});
+
+// popups
+
+	$('.js-call').on('click', function(){
+		$('.overlay').show();
+		$('.popup_feedback').addClass('is-open');
+		return false;
+	});
+
+	$('.js-order').on('click', function(){
+		$('.overlay').show();
+		$('.popup_order').addClass('is-open');
+		return false;
+	});
+
+
 // map
 	
   if ($('.map').length) {

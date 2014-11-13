@@ -26,10 +26,10 @@
 					<nav class="nav">
 						<ul>
 							<li>
-								<a href="#"><i class="callback-ico"></i>Обратный звонок</a>
+								<a href="#" class="js-call"><i class="callback-ico"></i>Обратный звонок</a>
 							</li>
 							<li>
-								<a href="#"><i class="catalog-ico"></i>Заказать металлопрокат</a>
+								<a href="#" class="js-order"><i class="catalog-ico"></i>Заказать металлопрокат</a>
 							</li>
 							<li>
 								+7 499 704-28-63
@@ -334,6 +334,98 @@
 	<!-- END footer -->
 </div>
 <!-- END out-->
+<!-- BEGIN popup -->
+<div class="overlay">
+	<i></i>
+	<div class="popup popup_feedback">
+		<div class="popup__close"></div>
+		<h3 class="h3">Обратный звонок</h3>
+		<div class="form">
+			<form>
+				<div class="form__row">
+					<div class="form__title">Имя</div>
+					<input type="text" class="input">
+				</div>
+				<div class="form__row">
+					<div class="form__title">Имя</div>
+					<input type="text" class="input">
+				</div>
+				<div class="form__row">
+					<div class="form__title">Телефон*</div>
+					<textarea class="textarea"></textarea>
+				</div>
+				<div class="form__bottom">
+					<button class="btn">Перезвоните мне</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup popup_order">
+		<div class="popup__close"></div>
+		<h3 class="h3">заказать металлопрокат</h3>
+		<div class="form">
+			<form>
+				<div class="box">
+					<div class="col50">
+						<div class="form__row">
+							<div class="form__title">название компании</div>
+							<input type="text" class="input">
+						</div>
+						<div class="form__row">
+							<div class="form__title">Имя*</div>
+							<input type="text" class="input">
+						</div>
+					</div>
+					<div class="col50">
+						<div class="form__row">
+							<div class="form__title">Телефон</div>
+							<input type="text" class="input">
+						</div>
+						<div class="form__row">
+							<div class="form__title">e-mail*</div>
+							<input type="text" class="input">
+						</div>
+					</div>
+				</div>
+				<div class="form__row">
+					<div class="form__title">Сообщение</div>
+					<textarea class="textarea"></textarea>
+				</div>
+				<div class="form__bottom">
+					<button class="btn">оставить заявку</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup popup_info" style="display: inline-block; opacity: 1;">
+		<div class="popup__close"></div>
+		<div class="info">
+			<div class="info__left">
+				<div class="info__img">
+					<img src="img/prod1.png" alt="">
+				</div>
+				<button class="btn">Отправить запрос</button>
+			</div>
+			<div class="info__right">
+				<h3 class="h3">Трубы круглые</h3>
+				<article class="info__article">
+					<p>Труба круглая представляет собой разновидность металлопроката круглого сечения на основе профиля, полого внутри. Изготавливаются в соответствии с европейскими стандартами EN 10219:2006 и EN 10210:2006 промышленным способом.</p>
+					<div class="tabs">
+						<ul class="tabs__list">
+							<li><a href="#">Описание</a></li>
+							<li><a href="#" class="is-active">Бесшовные</a></li>
+							<li><a href="#">Электросварные</a></li>
+							<li><a href="#">CHS - British</a></li>
+							<li><a href="#">CHS - British</a></li>
+							<li><a href="#">CHS - British</a></li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END popup -->
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

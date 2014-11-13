@@ -36,6 +36,9 @@ body { font-family: "Exo 2", Arial, sans-serif; font-size: 12px; line-height: 1.
 
 .col50 { float: left; width: 50%; }
 
+.btn { height: 40px; background: #fe662a; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; font-size: 12px; text-transform: uppercase; color: white; }
+.btn:hover { background: #fe5411; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
@@ -51,7 +54,7 @@ body { font-family: "Exo 2", Arial, sans-serif; font-size: 12px; line-height: 1.
 .header__in:after { content: " "; display: table; clear: both; }
 
 .logo { float: left; padding: 12px 0; }
-.logo a { display: block; font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-s6a764a7549.png') 0 -50px no-repeat; width: 103px; height: 69px; }
+.logo a { display: block; font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-sdaf162596d.png') 0 -92px no-repeat; width: 103px; height: 69px; }
 
 .nav { float: right; padding-top: 55px; }
 .nav ul { *zoom: 1; }
@@ -60,8 +63,8 @@ body { font-family: "Exo 2", Arial, sans-serif; font-size: 12px; line-height: 1.
 .nav ul li a { display: block; padding: 0 22px; height: 40px; line-height: 40px; font-size: 12px; text-transform: uppercase; color: white; text-decoration: none; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
 .nav ul li a:hover { background: #2a4f84; }
 .nav ul li a i { display: inline-block; margin-right: 10px; }
-.nav ul li a i.catalog-ico { background: url('../img/icons-s6a764a7549.png') 0 0 no-repeat; width: 12px; height: 10px; }
-.nav ul li a i.callback-ico { background: url('../img/icons-s6a764a7549.png') 0 -129px no-repeat; width: 12px; height: 12px; }
+.nav ul li a i.catalog-ico { background: url('../img/icons-sdaf162596d.png') 0 0 no-repeat; width: 12px; height: 10px; }
+.nav ul li a i.callback-ico { background: url('../img/icons-sdaf162596d.png') 0 -171px no-repeat; width: 12px; height: 12px; }
 
 .benefits { *zoom: 1; padding-top: 55px; padding-bottom: 35px; margin-left: -15px; }
 .benefits:after { content: " "; display: table; clear: both; }
@@ -149,3 +152,48 @@ body { font-family: "Exo 2", Arial, sans-serif; font-size: 12px; line-height: 1.
 .design a:hover { color: #fe5411; }
 
 .feedback { width: 230px; height: 40px; background: #fe662a; -moz-transition: bckground 200ms; -o-transition: bckground 200ms; -webkit-transition: bckground 200ms; transition: bckground 200ms; font-size: 12px; color: white; text-transform: uppercase; }
+
+.overlay { position: fixed; top: 0; bottom: 0; right: 0; left: 0; overflow-y: auto; text-align: center; z-index: 999; }
+.overlay i { position: absolute; top: 0; bottom: 0; right: 0; left: 0; background: rgba(23, 23, 23, 0.8); }
+.overlay:before { content: ""; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
+
+.popup { position: relative; vertical-align: middle; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: white; display: none; box-shadow: 0 0 19px 2px black; }
+.popup.is-open { display: inline-block; }
+.popup.popup_feedback { width: 350px; padding: 40px 42px 74px; }
+.popup.popup_order { width: 640px; padding: 44px 44px 56px; }
+.popup.popup_order .btn { width: 228px; }
+.popup.popup_info { width: 886px; padding: 50px 50px 120px 35px; }
+.popup__close { position: absolute; top: -38px; right: -38px; background: url('../img/icons-sdaf162596d.png') 0 -20px no-repeat; width: 32px; height: 32px; cursor: pointer; }
+
+.info { *zoom: 1; }
+.info:after { content: " "; display: table; clear: both; }
+.info__left { float: left; width: 164px; padding-top: 67px; margin-right: 55px; }
+.info__left .btn { width: 100%; }
+.info__img { margin-bottom: 20px; }
+.info__right { float: right; width: 582px; text-align: left; }
+.info__right .h3 { color: #3f3f3f !important; text-align: left; }
+.info__article > p { margin-bottom: 15px; font-size: 14px; color: #3f3f3f; }
+.info .h3 { font-weight: 400; color: black; }
+
+.form { text-align: left; }
+.form .btn { width: 100%; }
+.form__row { margin-bottom: 15px; }
+.form__title { margin-bottom: 5px; font-weight: 500; font-size: 12px; text-transform: uppercase; }
+.form__bottom { text-align: center; }
+.form .col50 { width: 48%; float: right; }
+.form .col50:first-child { float: left; }
+
+.input { width: 100%; height: 30px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 10px; font-family: "Exo 2", Arial, sans-serif; font-size: 14px; color: black; background: #e8e8e8; border: 1px solid #e8e8e8; -moz-transition: background 200ms, border-color 200ms; -o-transition: background 200ms, border-color 200ms; -webkit-transition: background 200ms, border-color 200ms; transition: background 200ms, border-color 200ms; }
+.input:focus { border-color: #cdcdcd; background: white; }
+
+.textarea { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 60px; resize: none; padding: 5px 10px; border: 1px solid #e8e8e8; background: #e8e8e8; font-family: "Exo 2", Arial, sans-serif; font-size: 14px; -moz-transition: background 200ms, border-color 200ms; -o-transition: background 200ms, border-color 200ms; -webkit-transition: background 200ms, border-color 200ms; transition: background 200ms, border-color 200ms; }
+.textarea:focus { border-color: #cdcdcd; background: white; }
+
+.tabs { border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; padding: 15px; margin-bottom: 40px; }
+.tabs__list { overflow: hidden; margin-left: -36px; }
+.tabs__list li { position: relative; display: inline-block; margin-left: 36px; }
+.tabs__list li:before { content: ""; position: absolute; top: 13px; right: -19px; width: 3px; height: 3px; border-radius: 50%; background: #fe662a; }
+.tabs__list li:last-child:before { display: none; }
+.tabs__list li a { font-size: 15px; text-transform: uppercase; color: #3f3f3f; line-height: 2; text-decoration: none; }
+.tabs__list li a:hover { color: #fe662a; }
+.tabs__list li a.is-active { color: #fe662a; text-decoration: underline; }

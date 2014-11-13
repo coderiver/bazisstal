@@ -319,10 +319,165 @@
 	+tr(bckground 200ms)
 	font-size: 12px
 	color: #fff
-	text-transform: uppercase  						  
-
-
-
+	text-transform: uppercase
+	
+//popups
+.overlay
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	overflow-y: auto
+	text-align: center
+	z-index: 999
+	i
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background: rgba(#171717, 0.8)
+	&:before
+		content: ""
+		display: inline-block
+		width: 0
+		height: 100%
+		vertical-align: middle
+.popup
+	position: relative
+	vertical-align: middle
+	+box
+	background: #fff 
+	display: none
+	box-shadow: 0 0 19px 2px #000
+	&.is-open
+		display: inline-block
+	&.popup_feedback
+		width: 350px
+		padding: 40px 42px 74px
+	&.popup_order
+		width: 640px
+		padding: 44px 44px 56px
+		.btn
+			width: 228px
+	&.popup_info
+		width: 886px
+		padding: 50px 50px 120px 35px  		   	
+	&__close
+		position: absolute
+		top: -38px
+		right: -38px
+		+s(close)
+		cursor: pointer
+.info
+	+clr
+	&__left
+		float: left
+		width: 164px
+		padding-top: 67px
+		margin-right: 55px
+		.btn
+			width: 100%
+	&__img
+		margin-bottom: 20px
+	&__right
+		float: right
+		width: 582px
+		text-align: left
+		.h3
+			color: #3f3f3f!important
+			text-align: left
+	&__article
+		& > p
+			margin-bottom: 15px
+			font-size: 14px
+			color: #3f3f3f 				
+	.h3
+		font-weight: 400
+		color: #000
+.form
+	text-align: left
+	.btn
+		width: 100% 
+	&__row
+		margin-bottom: 15px
+	&__title
+		margin-bottom: 5px
+		font-weight: 500
+		font-size: 12px
+		text-transform: uppercase
+	&__bottom
+		text-align: center	
+	.col50
+		width: 48%
+		float: right
+		&:first-child
+			float: left	
+.input
+	width: 100% 		  		 		 
+	height: 30px
+	+box
+	padding: 0 10px
+	font-family: 'Exo 2', Arial, sans-serif
+	font-size: 14px
+	color: #000
+	background: #e8e8e8  
+	border: 1px solid #e8e8e8
+	+transition(background 200ms, border-color 200ms)
+	&:focus
+		border-color: #cdcdcd
+		background: #fff 
+.textarea
+	+box
+	width: 100%
+	height: 60px
+	resize: none
+	padding: 5px 10px 
+	border: 1px solid #e8e8e8
+	background: #e8e8e8
+	font-family: 'Exo 2', Arial, sans-serif
+	font-size: 14px
+	+transition(background 200ms, border-color 200ms) 	 
+	&:focus
+		border-color: #cdcdcd
+		background: #fff
+.tabs
+	border-top: 1px solid #eaeaea		
+	border-bottom: 1px solid #eaeaea
+	padding: 15px
+	margin-bottom: 40px
+	&__list
+		overflow: hidden
+		margin-left: -36px
+		li
+			position: relative
+			display: inline-block
+			margin-left: 36px
+			&:before
+				content: ""
+				position: absolute
+				top: 13px
+				right: -19px
+				width: 3px
+				height: 3px
+				border-radius: 50%
+				background: $orange
+			&:last-child
+				&:before
+					display: none	 
+			a
+				font-size: 15px
+				text-transform: uppercase
+				color: #3f3f3f
+				line-height: 2
+				text-decoration: none
+				&:hover
+					color: $orange
+				&.is-active
+					color: $orange
+					text-decoration: underline	
+		 
 
 
 
