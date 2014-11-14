@@ -341,21 +341,21 @@
 		<div class="popup__close"></div>
 		<h3 class="h3">Обратный звонок</h3>
 		<div class="form">
-			<form>
+			<form class="js-validate">
 				<div class="form__row">
 					<div class="form__title">Имя</div>
-					<input type="text" class="input">
-				</div>
-				<div class="form__row">
-					<div class="form__title">Имя</div>
-					<input type="text" class="input">
+					<input type="text" class="input" name="company" placeholder="dfdgdfg">
 				</div>
 				<div class="form__row">
 					<div class="form__title">Телефон*</div>
-					<textarea class="textarea"></textarea>
+					<input type="text" class="input" name="phone" data-validation="number, length" data-validation-length="min10">
+				</div>
+				<div class="form__row">
+					<div class="form__title">Сообщение</div>
+					<textarea class="textarea" name="message"></textarea>
 				</div>
 				<div class="form__bottom">
-					<button class="btn">Перезвоните мне</button>
+					<button type="submit" class="btn">Перезвоните мне</button>
 				</div>
 			</form>
 		</div>
@@ -364,16 +364,16 @@
 		<div class="popup__close"></div>
 		<h3 class="h3">заказать металлопрокат</h3>
 		<div class="form">
-			<form>
+			<form class="js-validate">
 				<div class="box">
 					<div class="col50">
 						<div class="form__row">
 							<div class="form__title">название компании</div>
-							<input type="text" class="input">
+							<input type="text" class="input" name="company">
 						</div>
 						<div class="form__row">
 							<div class="form__title">Имя*</div>
-							<input type="text" class="input">
+							<input type="text" class="input" name="name" data-validation="required">
 						</div>
 					</div>
 					<div class="col50">
@@ -383,7 +383,7 @@
 						</div>
 						<div class="form__row">
 							<div class="form__title">e-mail*</div>
-							<input type="text" class="input">
+							<input type="text" class="input" name="email" data-validation="email">
 						</div>
 					</div>
 				</div>
@@ -392,7 +392,7 @@
 					<textarea class="textarea"></textarea>
 				</div>
 				<div class="form__bottom">
-					<button class="btn">оставить заявку</button>
+					<button type="submit" class="btn">оставить заявку</button>
 				</div>
 			</form>
 		</div>

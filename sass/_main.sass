@@ -448,7 +448,11 @@
 	+transition(background 200ms, border-color 200ms)
 	&:focus
 		border-color: #cdcdcd
-		background: #fff 
+		background: #fff
+	&.error
+		background: #fff
+		border-color: #fe2a2a
+		color: #fe2a2a	 
 .textarea
 	+box
 	width: 100%
@@ -544,7 +548,9 @@
 				+box
 				border-left: 1px solid #e5e5e5
 				&:first-child
-					border-left: none 	 
+					border-left: none
+.help-block
+	display: none					 	 
 
 
 
