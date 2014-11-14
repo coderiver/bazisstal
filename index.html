@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
-	<link href='http://fonts.googleapis.com/css?family=Exo+2:700,200,300,400,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Exo+2:700,200,300,400,500, 600' rel='stylesheet' type='text/css'>
 	<script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru-RU&load=package.full" type="text/javascript"></script>
 	<link rel="stylesheet" media="all" href="css/slick.css" >
 	<link rel="stylesheet" media="all" href="css/screen.css" >
@@ -84,7 +84,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -92,7 +92,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">трубы <br>профильные</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -100,7 +100,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -108,7 +108,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -116,7 +116,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -124,7 +124,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 				</div>
@@ -134,7 +134,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -142,7 +142,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -150,7 +150,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -158,7 +158,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -166,7 +166,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 					<div class="catalog__item">
@@ -174,7 +174,7 @@
 							<img src="img/prod1.png" alt="">
 						</div>
 						<div class="catalog__title">Балки</div>
-						<a href="#" class="catalog__descr">описание</a>
+						<a href="#" class="catalog__descr js-info">описание</a>
 						<a href="#" class="catalog__request">Отправить запрос</a>
 					</div>
 				</div>
@@ -335,7 +335,7 @@
 </div>
 <!-- END out-->
 <!-- BEGIN popup -->
-<div class="overlay">
+<div class="overlay" style="display: none;">
 	<i></i>
 	<div class="popup popup_feedback">
 		<div class="popup__close"></div>
@@ -397,7 +397,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="popup popup_info" style="display: inline-block; opacity: 1;">
+	<div class="popup popup_info">
 		<div class="popup__close"></div>
 		<div class="info">
 			<div class="info__left">
@@ -420,6 +420,17 @@
 							<li><a href="#">CHS - British</a></li>
 						</ul>
 					</div>
+					<h3 class="h3">Стальные трубы различают</h3>
+					<ul class="list">
+						<li>по способу производства (паяные, бесшовные, сварные, стальные трубы с покрытием, стальные трубы с обработанной поверхностью);</li>
+						<li>формой сечения: круглые, овальные, квадратные, прямоугольные, каплевидные, плоскоовальные, а также трубы других форм сечения);</li>
+						<li>по отделке концов могут быть: нарезные, стальные трубы с высажен- ными концами, трубы с суженными концами, а также трубы с расши- ренными концами</li>
+					</ul>
+					<h3 class="h3">Большой выбор круглых труб</h3>
+					<p><strong>Наши клубы — это прежде всего наши тренера и инструкторы. На протяже- нии уже многих лет существования нашей сети мы тщательно подходим.</strong></p>
+					<img src="img/img1.jpg" alt="">
+					<p>Труба круглая представляет собой разновидность металлопроката круглого сечения на основе профиля, полого внутри. Изготавливаются в соответствии с европейскими стандартами EN 10219:2006 и EN 10210:2006 промышленным способом. Труба круглая представляет собой. </p>
+					<p>Труба круглая представляет собой разновидность металлопроката круглого сечения на основе профиля, полого внутри. Изготавливаются в соответствии с европейскими стандартами EN 10219:2006 и EN 10210:2006 промышленным способом.</p>
 				</article>
 			</div>
 		</div>

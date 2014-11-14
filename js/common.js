@@ -11,11 +11,13 @@ head.ready(function() {
 	$('.overlay i').on('click', function(){
 		$('.popup').removeClass('is-open');
 		$('.overlay').hide();
+		$('body').removeClass('no-scroll');
 	});
 
 	$('.popup__close').on('click', function(){
 		$(this).parent().removeClass('is-open');
 		$('.overlay').hide();
+		$('body').removeClass('no-scroll');
 	});
 
 // popups
@@ -23,12 +25,21 @@ head.ready(function() {
 	$('.js-call').on('click', function(){
 		$('.overlay').show();
 		$('.popup_feedback').addClass('is-open');
+		$('body').addClass('no-scroll');
 		return false;
 	});
 
 	$('.js-order').on('click', function(){
 		$('.overlay').show();
 		$('.popup_order').addClass('is-open');
+		$('body').addClass('no-scroll');
+		return false;
+	});
+
+	$('.js-info').on('click', function(){
+		$('.overlay').show();
+		$('.popup_info').addClass('is-open');
+		$('body').addClass('no-scroll');
 		return false;
 	});
 
