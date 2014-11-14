@@ -38,7 +38,32 @@ head.ready(function() {
 
 	$('.js-info').on('click', function(){
 		$('.overlay').show();
-		$('.popup_info').addClass('is-open');
+		$('.js-popup1').addClass('is-open');
+		$('body').addClass('no-scroll');
+		return false;
+	});
+
+	$('.js-full').on('click', function(){
+		$('.overlay').show(); 
+		$('.js-popup2').addClass('is-open');
+		$('.js-scroll').each(function(){
+				$(this).jScrollPane();
+				var api = $(this).data('jsp');
+				var throttleTimeout;
+
+				$(window).resize(function(){
+					if (!throttleTimeout) {
+						throttleTimeout = setTimeout(
+							function()
+							{
+								api.reinitialise();
+								throttleTimeout = null;
+							},
+							50
+						);
+					}
+				});
+			});
 		$('body').addClass('no-scroll');
 		return false;
 	});
@@ -69,5 +94,26 @@ head.ready(function() {
 
     });
   };	
+
+ // scrollpane
+ 
+ $('.js-scroll').each(function(){
+		$(this).jScrollPane();
+		var api = $(this).data('jsp');
+		var throttleTimeout;
+
+		$(window).resize(function(){
+			if (!throttleTimeout) {
+				throttleTimeout = setTimeout(
+					function()
+					{
+						api.reinitialise();
+						throttleTimeout = null;
+					},
+					50
+				);
+			}
+		});
+	}); 
 
 });
