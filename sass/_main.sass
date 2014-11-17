@@ -35,7 +35,8 @@
 			line-height: 40px
 			a
 				display: block
-				padding: 0 22px
+				padding: 0 11px 0 22px
+				margin-right: 11px
 				height: 40px
 				line-height: 40px
 				font-size: 12px
@@ -72,7 +73,40 @@
 		opacity: 0.8
 		font-size: 14px
 		color: #fff
-		
+
+// fixed header		
+.fixed-header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	height: 62px
+	background: rgba(#295189, .9)
+	z-index: 999
+	visibility: hidden
+	opacity: 0
+	+tr(opacity 300ms)
+	&.is-open
+		visibility: visible
+		opacity: 1 
+	.wrap
+		+clr
+		+wrap
+	.nav
+		padding-top: 0
+		ul
+			li
+				height: 62px
+				line-height: 62px
+				a
+					height: 62px
+					line-height: 62px	
+	&__logo
+		float: left
+		padding-top: 6px
+		a
+			display: block
+			+s(logo-small)
 //catalog
 .catalog
 	padding: 50px 0 55px
@@ -91,7 +125,8 @@
 		text-align: center
 		&:hover
 			.catalog__img
-				opacity: 0.5
+				img
+					opacity: 0.5
 			.catalog__title
 				+transform(translateY(-90px))
 			.catalog__descr
@@ -101,9 +136,13 @@
 				visibility: visible
 				opacity: 1 	 		 
 	&__img
+		position: relative
+		display: block
 		padding-top: 20px
+		text-decoration: none
 		font-size: 0
-		+tr(opacity 200ms)
+		img
+			+tr(opacity 200ms)
 	&__title
 		min-height: 52px
 		padding: 20px 0 0 
@@ -499,7 +538,8 @@
 				text-decoration: none
 				&:hover
 					color: $orange
-				&.is-active
+			&.is-active
+				a
 					color: $orange
 					text-decoration: underline
 // table
